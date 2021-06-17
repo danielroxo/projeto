@@ -1,0 +1,80 @@
+/**
+ * Header
+ */
+
+nav {
+	a {
+		color: #000;
+	}
+	list-style: none;
+	background: $green;
+	height: 80px;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	font-family: $font-header;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	ul {
+		background: $green;
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+		line-height: 30px;
+		li {
+			line-height: 80px;
+			margin: 50px 0;
+			a {
+				font-size: 1.1em;
+				padding: 7px 13px;
+				border-radius: 3px;
+				font-weight: bold;
+			}
+		}
+	}
+}
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+.logo {
+	font-size: 1.5em;
+	line-height: 80px;
+	margin-left: 7%;
+}
+.navbar.active {
+	border-style: solid;
+	transition: .5s;
+	background: none;
+}
+.navbar {
+	&:hover {
+		border-style: solid;
+		transition: .5s;
+		background: none;
+	}
+}
+.checkbtn {
+	font-size: 30px;
+	color: black;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+}
+#check {
+	display: none;
+	&:checked {
+		~ {
+			ul {
+				left: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,106 @@
+/**
+ * About
+ */
+ 
+.eventoseconcursos {
+	display: flex;
+	flex-wrap: wrap;
+}
+h3 {
+	padding: 0 0 0 2%;
+	font-family: $font-header;
+}
+ul.eventos {
+	list-style: none;
+	padding: 0 0 0 3%;
+	li {
+		&::before {
+			@include ul-before;
+		}
+	}
+}
+.concursos {
+	list-style: none;
+	padding: 0 0 0 3%;
+}
+ul.concursos {
+	li {
+		&::before {
+			@include ul-before;
+			color: $yellow;
+		}
+	}
+}
+ul.design {
+	@include ul-style;
+}
+ul.tools {
+	@include ul-style;
+}
+ul.marketing {
+	@include ul-style;
+}
+.design {
+	li {
+		background-color: $yellow;
+		padding: 16px;
+		border-radius: 15px 50px;
+		margin: 1%;
+	}
+}
+.tools {
+	li {
+		padding: 16px;
+		margin: 1%;
+		background-color: $pink;
+		border-radius: 50px 15px;
+	}
+}
+.marketing {
+	li {
+		padding: 16px;
+		border-radius: 15px 50px;
+		margin: 1%;
+		background-color: $purple;
+	}
+}
+.sobremimpic {
+	width: 100%;
+	height: auto;
+	border-radius: 30px;
+}
+button {
+	background-color: $blue;
+	font-family: $font-header;
+	border: none;
+	color: #212121;
+	padding: 16px 32px;
+	text-align: center;
+	font-size: 0.9em;
+	margin: 4px 2px;
+	transition: 0.3s;
+	cursor: pointer;
+	border-radius: 30px;
+	&:hover {
+		background-color: white;
+		color: #000;
+		border-style: solid;
+	}
+}
+h2 {
+	font-size: 1.3em;
+	font-family: $font-header;
+}
+p {
+	line-height: 1.5;
+	padding-bottom: 1.6666666666666667vh;
+}
+section {
+	padding: 5% 7%;
+}
+.sobremimfig {
+	text-align: center;
+}
+.formabout {
+	text-align: center;
+}

@@ -31,7 +31,7 @@ nav {
   top: 0;
 }
 
-h1.logo {
+a.logo {
   font-size: 1.5em;
   line-height: 80px;
   margin-left: 7%;

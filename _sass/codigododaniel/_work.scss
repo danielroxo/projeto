@@ -1,0 +1,14 @@
+/**
+ * Work
+ */
+ 
+.imagem-destaque {
+	cursor: pointer;
+	border: 20px solid transparent;
+	border-image: url(images/border.png) 40;
+	width: 100%;
+	height: auto;
+	&:hover {
+		opacity: 0.3;
+	}
+}

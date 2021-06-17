@@ -1,0 +1,40 @@
+/**
+ * Contactos
+ */
+
+.linkedin {
+	a {
+		&:hover {
+			color: $footer-a-color;
+		}
+		@include contactos-a;
+		color: $yellow;
+	}
+}
+.behance {
+	a {
+		&:hover {
+			color: $footer-a-color;
+		}
+		@include contactos-a;
+		color: $purple;
+	}
+}
+.mail {
+	a {
+		&:hover {
+			color: $footer-a-color;
+		}
+		@include contactos-a;
+		color: $pink;
+	}
+}
+.phone {
+	a {
+		&:hover {
+			color: $footer-a-color;
+		}
+		@include contactos-a;
+		color: $blue;
+	}
+}

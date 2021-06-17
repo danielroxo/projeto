@@ -1,0 +1,17 @@
+/**
+ * Items tranversais ao layout Page
+ */
+
+html { 
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	margin: 0;
+	font-family: $font-body;
+}
+
+main {
+	margin-top: 14vh;
+}
