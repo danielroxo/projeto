@@ -69,6 +69,23 @@ ul.marketing {
 	height: auto;
 	border-radius: 30px;
 }
+h2 {
+	font-size: 1.3em;
+	font-family: $font-header;
+}
+p {
+	line-height: 1.5;
+	padding-bottom: 1.6666666666666667vh;
+}
+section {
+	padding: 5% 7%;
+}
+.sobremimfig {
+	text-align: center;
+}
+.formabout {
+	text-align: center;
+}
 button {
 	background-color: $blue;
 	font-family: $font-header;
@@ -86,21 +103,4 @@ button {
 		color: #000;
 		border-style: solid;
 	}
-}
-h2 {
-	font-size: 1.3em;
-	font-family: $font-header;
-}
-p {
-	line-height: 1.5;
-	padding-bottom: 1.6666666666666667vh;
-}
-section {
-	padding: 5% 7%;
-}
-.sobremimfig {
-	text-align: center;
-}
-.formabout {
-	text-align: center;
 }

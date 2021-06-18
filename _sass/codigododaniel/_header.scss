@@ -2,7 +2,7 @@
  * Header
  */
 
-nav {
+.navdaniel {
 	a {
 		color: #000;
 	}
@@ -48,16 +48,20 @@ nav {
 	line-height: 80px;
 	margin-left: 7%;
 }
-.navbar.active {
+.navbardaniel.active {
 	border-style: solid;
 	transition: .5s;
 	background: none;
+	.tumbleweed {
+	display: none;
+	}
 }
-.navbar {
+.navbardaniel {
 	&:hover {
 		border-style: solid;
 		transition: .5s;
 		background: none;
+		text-decoration: none;
 	}
 }
 .checkbtn {

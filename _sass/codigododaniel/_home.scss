@@ -1,0 +1,19 @@
+/**
+ * Home
+ */
+ 
+.tumbleweed {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  animation-name: animacao;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animacao {
+  0%   {left:-30%;}
+  50%  {left:110%;}
+  100% {left:-30%;}
+}
