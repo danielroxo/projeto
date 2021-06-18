@@ -2,32 +2,33 @@
  * About
  */
  
-.eventoseconcursos {
+.formacao {
 	display: flex;
 	flex-wrap: wrap;
 }
 h3 {
-	padding: 0 0 0 2%;
 	font-family: $font-header;
+	font-size: 1.25em;
 }
-ul.eventos {
+ul.postgraduate-skills {
 	list-style: none;
-	padding: 0 0 0 3%;
+	padding: 0 0 1.6666666666666667vh 3%;
 	li {
 		&::before {
 			@include ul-before;
+			color: $pink;
 		}
 	}
 }
-.concursos {
+.licentiate-skills {
 	list-style: none;
-	padding: 0 0 0 3%;
+	padding: 0 0 1.6666666666666667vh 3%;
 }
-ul.concursos {
+ul.licentiate-skills {
 	li {
 		&::before {
 			@include ul-before;
-			color: $yellow;
+			color: $green;
 		}
 	}
 }
@@ -69,13 +70,20 @@ ul.marketing {
 	height: auto;
 	border-radius: 30px;
 }
+@include tablet-portrait {
+	.sobremimpic {
+    	height:100%;
+   		width: 40vh;
+  }
+}
 h2 {
-	font-size: 1.3em;
+	font-size: 1.5em;
 	font-family: $font-header;
 }
 p {
 	line-height: 1.5;
 	padding-bottom: 1.6666666666666667vh;
+	margin-bottom: 0;
 }
 section {
 	padding: 5% 7%;
@@ -85,6 +93,7 @@ section {
 }
 .formabout {
 	text-align: center;
+	padding-bottom: 1.6666666666666667vh;
 }
 button {
 	background-color: $blue;
@@ -103,4 +112,14 @@ button {
 		color: #000;
 		border-style: solid;
 	}
+}
+.anolocal1 {
+	@include anolocal;
+}
+.anolocal2 {
+	@include anolocal;
+	text-decoration-color: $green;
+}
+.item-educacao {
+    padding: 0 4vw 0 0;
 }

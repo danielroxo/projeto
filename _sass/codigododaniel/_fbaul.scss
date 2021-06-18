@@ -1,0 +1,30 @@
+/**
+* FBAUL
+*/
+
+.casofbaul a {
+	@include anolocal;
+	text-decoration-color: $pink;
+	color: black;
+}
+
+.btn-back {
+	@include anolocal;
+	text-decoration-color: $pink;
+	color: black;
+}
+
+.btn-back:hover {
+	text-decoration-color: black;
+	color: black;
+}
+
+.imagem-caso {
+	@include img-destaque;
+}
+
+@include tablet-landscape {
+	imagem-caso {
+		width: 80vw;
+	}
+}

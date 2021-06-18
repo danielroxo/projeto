@@ -1,0 +1,15 @@
+docs_list_title: nav
+docs:
+
+- title: Home
+  url: 
+
+- title: About
+  url: about
+
+- title: Work
+  url: work
+
+- title: Contacts
+  url: contacts
+

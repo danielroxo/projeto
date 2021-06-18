@@ -1,0 +1,18 @@
+/**
+ * SPOTIFY
+ */
+
+ .casospotify a {
+ 	@include anolocal;
+ 	text-decoration-color: $green;
+ 	color: black;
+ }
+ .btn-backspotify {
+ 	@include anolocal;
+ 	text-decoration-color: $green;
+ 	color: black;
+ }
+  .btn-backspotify:hover {
+ 	text-decoration-color: black;
+ 	color: black;
+ }

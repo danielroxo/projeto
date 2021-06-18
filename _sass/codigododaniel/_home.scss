@@ -3,17 +3,33 @@
  */
  
 .tumbleweed {
+  z-index: 1;
   width: 64px;
   height: 64px;
   position: relative;
   animation-name: animacao;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-delay: 1s;
   animation-iteration-count: infinite;
+  transform: skew( -10deg , -10deg );
 }
 
 @keyframes animacao {
   0%   {left:-30%;}
   50%  {left:110%;}
   100% {left:-30%;}
+}
+
+.home {
+  text-align-last: center;
+}
+
+.nome {
+  @include anolocal;
+  text-decoration-color: $purple;
+}
+
+.cargo {
+  @include anolocal;
+  text-decoration-color: $yellow;
 }

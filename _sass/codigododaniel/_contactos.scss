@@ -38,6 +38,20 @@
 		color: $blue;
 	}
 }
-.-col-3 {
-	padding: 0.972vw;
+@include tablet-landscape {
+	.wrapper {
+		display: grid;
+		grid-template-columns: 2fr 2fr;
+    	grid-template-rows: 2fr 2fr
+	}
+}
+@include laptop {
+	.wrapper {
+		font-size: 1.4em;
+	}
+}
+@include desktop {
+	.wrapper {
+		font-size: 1.7em;
+	}
 }

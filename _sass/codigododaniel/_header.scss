@@ -6,6 +6,7 @@
 	a {
 		color: #000;
 	}
+	z-index: 1000;
 	list-style: none;
 	background: $green;
 	height: 80px;
@@ -52,9 +53,6 @@
 	border-style: solid;
 	transition: .5s;
 	background: none;
-	.tumbleweed {
-	display: none;
-	}
 }
 .navbardaniel {
 	&:hover {
@@ -82,3 +80,28 @@
 		}
 	}
 }
+@include laptop {
+.checkbtn {
+	display: none;
+}
+.navdaniel {
+	ul {
+		background: none;
+		top: 0px;
+		left: 12%;
+		position: absolute;
+		height: 0vh;
+		li {
+			margin: 0 5px;
+			display: inline-block;
+		}
+	}
+}
+}
+@include desktop {
+	.navdaniel {
+		ul {
+		left: 20%;
+		}
+	}
+}	

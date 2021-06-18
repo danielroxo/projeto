@@ -5,18 +5,16 @@
 html { 
 	scroll-behavior: smooth;
 }
-
 body {
 	width: 100%;
 	margin: 0;
 	font-family: $font-body;
 }
-
 main {
-	margin-top: 14vh;
+	margin-top: 10vh;
 }
-
 h1 {
     font-size: 1.8em;
     font-family: $font-header;
+    padding-bottom: 1.6666666666666667vh;
 }

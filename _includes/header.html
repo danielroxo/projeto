@@ -4,12 +4,13 @@
     <label for="check" class="checkbtn">
       <i class="fas fa-bars"></i>
     </label>
-    <a class="logo">Daniel Roxo</a>
+    <a class="logo" href="{{ site.baseurl }}/">Daniel Roxo</a>
     <ul>
-      <li><a class="navbardaniel" href="/projeto/">Home</a></li>
-      <li><a class="navbardaniel" href="/projeto/about/">About</a></li>
-      <li><a class="navbardaniel" href="/projeto/work/">Work</a></li>
-      <li><a class="navbardaniel" href="/projeto/contacts/">Contacts</a></li>
+      {% for nav in site.data.nav.docs %}
+      <li>
+        <a class="navbardaniel" href="{{ site.baseurl }}/{{ nav.url }}">{{ nav.title }}</a>
+      </li> 
+      {% endfor %}
     </ul>
   </nav>
 </header>

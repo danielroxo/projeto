@@ -2,6 +2,17 @@
  * Mixins
  */
 
+@mixin img-destaque {
+	cursor: pointer;
+	border: 20px solid transparent;
+	border-image: url(images/border.png) 40;
+	width: 100%;
+	height: auto;
+	&:hover {
+		opacity: 0.3;
+	}
+}
+
 @mixin contactos-a {
 	cursor: pointer;
 	font-size: 1.1em;
@@ -20,8 +31,34 @@
 @mixin ul-style {
 	list-style: none;
 	display: flex;
-	padding: 2% 0 0 0;
+	padding: 0 0 1.6666666666666667vh 0;
 	flex-wrap: wrap;
+}
+
+@mixin anolocal {
+	text-decoration: underline;
+  	text-decoration-color: $pink;
+  	text-decoration-thickness: 2px;
+}
+
+/**
+ * Mixins media queries
+ */
+
+@mixin tablet-portrait {
+  @media (min-width: 450px) { @content; }
+}
+
+@mixin tablet-landscape {
+  @media (min-width: 700px) { @content; }
+}
+
+@mixin laptop {
+  @media (min-width: 900px) { @content; }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) { @content; }
 }
 
 /**
@@ -50,4 +87,6 @@ $footer-a-color: black;
 	"codigododaniel/contactos",
 	"codigododaniel/work",
 	"codigododaniel/home",
+	"codigododaniel/fbaul",
+	"codigododaniel/spotify",
 	"codigododaniel/footer";
